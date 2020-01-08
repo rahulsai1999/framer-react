@@ -45,3 +45,12 @@
   text-transform: capitalize;
   color: #ffffff;
 }
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.top-banner {
+  background: url("./components/back.png");
+  height: 899px;
+}

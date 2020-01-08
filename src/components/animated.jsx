@@ -15,7 +15,7 @@ const variants = {
     }
   },
   second: {
-    open: { x: -640, y: 250, scale: 0.8 },
+    open: { x: "-133%", y: 250, scale: 0.8 },
     closed: { x: 100, y: 0, scale: 1 },
     text: {
       open: { opacity: 0 },
@@ -23,7 +23,7 @@ const variants = {
     }
   },
   third: {
-    open: { x: -1280, y: 470, scale: 0.8 },
+    open: { x: "-266%", y: 470, scale: 0.8 },
     closed: { x: 100, y: 0, scale: 1 },
     text: {
       open: { opacity: 0 },
@@ -79,7 +79,12 @@ const Animated = () => {
 
       <br />
       <Row className="justify-content-center">
-        <Button onClick={() => setisOpen(!isOpen)}>
+        <Button
+          onClick={() => {
+            setisOpen(!isOpen);
+            window.scrollTo({ top: 2500, behavior: "smooth" });
+          }}
+        >
           Learn within 2 minutes
         </Button>
       </Row>

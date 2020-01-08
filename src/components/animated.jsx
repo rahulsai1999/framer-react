@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Container, Button, Row, Col } from "react-bootstrap";
+import CardFramer from "./card";
 
 const variants = {
   first: {
@@ -23,37 +24,25 @@ const Animated = () => {
     <Container>
       <Row>
         <Col>
-          <motion.div
-            animate={isOpen ? "open" : "closed"}
+          <CardFramer
+            isOpen={isOpen}
             variants={variants.first}
-            transition={{ velocity: 0.5 }}
-          >
-            <div
-              style={{ backgroundColor: "#657991", width: 300, height: 200 }}
-            ></div>
-          </motion.div>
+            img="img/card1.png"
+          ></CardFramer>
         </Col>
         <Col>
-          <motion.div
-            animate={isOpen ? "open" : "closed"}
+          <CardFramer
+            isOpen={isOpen}
             variants={variants.second}
-            transition={{ velocity: 0.5 }}
-          >
-            <div
-              style={{ backgroundColor: "#657991", width: 300, height: 200 }}
-            ></div>
-          </motion.div>
+            img="img/card2.png"
+          ></CardFramer>
         </Col>
         <Col>
-          <motion.div
-            animate={isOpen ? "open" : "closed"}
+          <CardFramer
+            isOpen={isOpen}
             variants={variants.third}
-            transition={{ velocity: 0.5 }}
-          >
-            <div
-              style={{ backgroundColor: "#657991", width: 300, height: 200 }}
-            ></div>
-          </motion.div>
+            img="img/card3.png"
+          ></CardFramer>
         </Col>
       </Row>
 

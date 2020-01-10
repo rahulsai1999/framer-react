@@ -3,12 +3,14 @@ import { Row, Col } from "react-bootstrap";
 import CardFramer from "./card";
 import Arrow from "./arrow";
 import Button from "./buttons";
+import RightSec from "./rightsec";
 
 //all animation properties controlled here
+// closed: initial || open: button press
 const variants = {
   first: {
     open: { x: 0, y: 30, scale: 0.8 },
-    closed: { x: 100, y: 0, scale: 1 },
+    closed: { x: 80, y: 0, scale: 1 },
     text: {
       open: { opacity: 0 },
       closed: { opacity: 1 }
@@ -16,7 +18,7 @@ const variants = {
   },
   second: {
     open: { x: "-133%", y: 250, scale: 0.8 },
-    closed: { x: 100, y: 0, scale: 1 },
+    closed: { x: 80, y: 0, scale: 1 },
     text: {
       open: { opacity: 0 },
       closed: { opacity: 1 }
@@ -24,7 +26,7 @@ const variants = {
   },
   third: {
     open: { x: "-266%", y: 470, scale: 0.8 },
-    closed: { x: 100, y: 0, scale: 1 },
+    closed: { x: 80, y: 0, scale: 1 },
     text: {
       open: { opacity: 0 },
       closed: { opacity: 1 }
@@ -33,6 +35,10 @@ const variants = {
   arrsmall: {
     open: { opacity: 0 },
     closed: { opacity: 1, y: 100, x: 100 }
+  },
+  rightSec: {
+    open: { opacity: 1, x: "100%", y: "-50%" },
+    closed: { opacity: 0, x: "200%", y: "-50%" }
   }
 };
 
@@ -41,7 +47,7 @@ const Animated = () => {
   const [isOpen, setisOpen] = useState(false);
   return (
     <div>
-      <Row className="no-gutters">
+      <Row className="no-gutters" style={{ overflow: "hidden" }}>
         <Col lg={3}>
           <CardFramer
             isOpen={isOpen}
@@ -75,10 +81,11 @@ const Animated = () => {
             body="Order the Designed home or a part of Home and Next Day your House will never be the same you used to live with."
           ></CardFramer>
         </Col>
-      </Row>
-
-      <br />
-      <Row className="justify-content-center">
+        <RightSec
+          isOpen={isOpen}
+          variants={variants.rightSec}
+          stateHook={setisOpen}
+        />
         <Button
           onClick={() => {
             setisOpen(!isOpen);

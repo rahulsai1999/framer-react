@@ -82,7 +82,6 @@ const Animated = () => {
         <Button
           onClick={() => {
             setisOpen(!isOpen);
-            window.scrollTo({ top: 2500, behavior: "smooth" });
           }}
         >
           Learn within 2 minutes

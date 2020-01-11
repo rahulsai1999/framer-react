@@ -14,4 +14,29 @@ const Arrow = props => {
   );
 };
 
-export default Arrow;
+const BigArrow = props => {
+  const { carState, variants, isOpen } = props;
+  let asv = isOpen ? "close" : null;
+  switch (carState) {
+    case 1:
+      asv = "first";
+      break;
+    case 2:
+      asv = "second";
+      break;
+    case 3:
+      asv = "third";
+      break;
+  }
+  return (
+    <motion.div
+      animate={asv}
+      variants={variants}
+      transition={{ velocity: 0.5 }}
+    >
+      <img src="img/arrbig.svg" />
+    </motion.div>
+  );
+};
+
+export { Arrow as default, BigArrow };

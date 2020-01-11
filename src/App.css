@@ -115,6 +115,7 @@
   text-transform: uppercase;
   border-bottom: 4px dotted #000000;
   margin-bottom: 1%;
+  text-align: center;
 }
 
 .text-sec-info-card {
@@ -137,4 +138,29 @@
   font-size: 16.3686px;
   line-height: 25px;
   color: white;
+  margin-top: 5%;
+}
+
+.right-card-step {
+  height: 28px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18.8852px;
+  line-height: 28px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.right-card-step-next {
+  height: 28px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 7%;
 }

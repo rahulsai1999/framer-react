@@ -61,7 +61,11 @@ const RightSec = props => {
                 variants={animParam.first}
                 transition={{ velocity: 0.5 }}
               >
-                <img src="img/card1.png" height={410} alt="card1" />
+                <div className="right-card-step">Step 1</div>
+                <div className="right-card-step-next">
+                  Choose Your Floorplan
+                </div>
+                <img src="img/extend1.png" height={300} alt="card1" />
                 <div className="right-card-text">
                   {" "}
                   Find the floorplan based on your builder and voila your house
@@ -75,7 +79,11 @@ const RightSec = props => {
                 variants={animParam.second}
                 transition={{ velocity: 0.5 }}
               >
-                <img src="img/card2.png" height={410} alt="card2" />
+                <div className="right-card-step">Step 2</div>
+                <div className="right-card-step-next">
+                  Select The Design
+                </div>
+                <img src="img/extend1.png" height={300} alt="card2" />
                 <div className="right-card-text">
                   {" "}
                   Choose from Vast variety of Design from Top Interior Designer
@@ -90,7 +98,11 @@ const RightSec = props => {
                 variants={animParam.third}
                 transition={{ velocity: 0.5 }}
               >
-                <img src="img/card3.png" height={410} alt="card3" />
+                <div className="right-card-step">Step 3</div>
+                <div className="right-card-step-next">
+                  Order Your Designed Home!
+                </div>
+                <img src="img/extend1.png" height={300} alt="card3" />
                 <div className="right-card-text">
                   {" "}
                   Order the Designed home or a part of Home and Next Day your

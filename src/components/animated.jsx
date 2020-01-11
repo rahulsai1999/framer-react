@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import CardFramer from "./card";
 import Arrow from "./arrow";
-import Button from "./buttons";
+import { RButton as Button } from "./buttons";
 import RightSec from "./rightsec";
 
 //all animation properties controlled here

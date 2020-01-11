@@ -28,15 +28,55 @@
   width: 300px;
   height: 54px;
   background: #e1544e !important;
-  box-shadow: 0px 5px 10.4473px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10.4473px rgba(0, 0, 0, 0.1) !important;
   border-radius: 32px !important;
+  border: 2px solid #e1544e !important;
 }
 
 .red-button:focus {
   outline: 0 !important;
 }
 
+.red-button:hover {
+  background-color: white !important;
+}
+
+.red-button:hover .red-button-text {
+  color: #e1544e !important;
+}
 .red-button-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.7164px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.blue-button {
+  outline: none;
+  width: 134px;
+  height: 43px;
+  background: #657991 !important;
+  box-shadow: 0px 5px 10.4473px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 21.5px !important;
+  border: 2px solid white !important;
+}
+
+.blue-button:focus {
+  outline: 0 !important;
+}
+
+.blue-button:hover {
+  background-color: white !important;
+}
+
+.blue-button:hover .blue-button-text {
+  color: #657991 !important;
+}
+
+.blue-button-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;

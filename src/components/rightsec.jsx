@@ -1,5 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  closeButton as CButton,
+  prevButton as PButton,
+  nextButton as NButton
+} from "./buttons";
 import { Row, Col, Button } from "react-bootstrap";
 
 const RightSec = props => {
@@ -12,20 +17,36 @@ const RightSec = props => {
     >
       <div
         style={{
-          backgroundColor: isOpen ? "#343434" : "#FFFFFF",
+          backgroundColor: isOpen ? "#657991" : "#FFFFFF",
           opacity: isOpen ? 1 : 0,
           height: 700,
           width: 800
         }}
       >
-        <img src="img/card1.png"></img>
-        <Button
-          onClick={() => {
-            stateHook(!isOpen);
-          }}
-        >
-          Quit
-        </Button>
+        <Row>
+          <Col>
+            <CButton
+              onClick={() => {
+                stateHook(!isOpen);
+              }}
+            >
+              Close
+            </CButton>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <img src="img/card1.png" alt="card1" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <PButton />
+          </Col>
+          <Col>
+            <NButton />
+          </Col>
+        </Row>
       </div>
     </motion.div>
   );

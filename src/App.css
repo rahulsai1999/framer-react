@@ -12,6 +12,8 @@
   font-size: 20px;
   line-height: 30px;
   text-transform: capitalize;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .body-text {
@@ -20,11 +22,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .red-button {
   position: relative;
-  left: -5%;
+  left: -31.4%;
   margin-top: 2%;
   outline: none;
   width: 300px;
@@ -95,4 +99,31 @@
 .top-banner {
   background: url("./components/back.png");
   height: 899px;
+}
+
+.text-info-card {
+  width: 220px;
+  margin-left: 7%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18.8852px;
+  line-height: 28px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  border-bottom: 4px dotted #000000;
+  margin-bottom: 1%;
+}
+
+.text-sec-info-card {
+  width: 580px;
+  margin-left: 7%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 2%;
 }

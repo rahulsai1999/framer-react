@@ -35,8 +35,9 @@ const RightSec = props => {
         style={{
           backgroundColor: isOpen ? "#657991" : "#FFFFFF",
           opacity: isOpen ? 1 : 0,
-          height: 700,
-          width: 900
+          height: 650,
+          width: 1400,
+          marginBottom: 100
         }}
       >
         <Container>

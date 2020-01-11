@@ -9,7 +9,7 @@ import RightSec from "./rightsec";
 // closed: initial || open: button press
 const variants = {
   first: {
-    open: { x: 0, y: 30, scale: 0.8 },
+    open: { x: 0, y: 0, scale: 0.85 },
     closed: { x: 80, y: 0, scale: 1 },
     text: {
       open: { opacity: 0 },
@@ -17,7 +17,7 @@ const variants = {
     }
   },
   second: {
-    open: { x: "-133%", y: 250, scale: 0.8 },
+    open: { x: "-133%", y: 220, scale: 0.85 },
     closed: { x: 80, y: 0, scale: 1 },
     text: {
       open: { opacity: 0 },
@@ -25,7 +25,7 @@ const variants = {
     }
   },
   third: {
-    open: { x: "-266%", y: 470, scale: 0.8 },
+    open: { x: "-266%", y: 440, scale: 0.85 },
     closed: { x: 80, y: 0, scale: 1 },
     text: {
       open: { opacity: 0 },
@@ -37,7 +37,7 @@ const variants = {
     closed: { opacity: 1, y: 100, x: 100 }
   },
   rightSec: {
-    open: { opacity: 1, x: "100%", y: "-50%" },
+    open: { opacity: 1, x: 800, y: "-50%" },
     closed: { opacity: 0, x: "200%", y: "-50%" }
   }
 };

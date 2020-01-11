@@ -26,9 +26,9 @@ const closeButton = props => {
 };
 
 const nextButton = props => {
-  const { onClick } = props;
+  const { onClick, style } = props;
   return (
-    <Button className="blue-button" onClick={onClick}>
+    <Button style={style} className="blue-button" onClick={onClick}>
       <div className="blue-button-text">
         Next &nbsp;
         <MdNavigateNext size={21} style={{ marginBottom: 1 }} />
@@ -38,9 +38,9 @@ const nextButton = props => {
 };
 
 const prevButton = props => {
-  const { onClick } = props;
+  const { onClick, style } = props;
   return (
-    <Button className="blue-button" onClick={onClick}>
+    <Button style={style} className="blue-button" onClick={onClick}>
       <div className="blue-button-text">
         <MdNavigateBefore size={21} style={{ marginBottom: 1 }} />
         &nbsp; Previous

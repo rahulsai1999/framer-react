@@ -13,12 +13,12 @@ const animParam = {
     closed: { display: "none", opacity: 0 }
   },
   second: {
-    open: { display: "block", opacity: 1, x: "-20%" },
+    open: { display: "block", opacity: 1, x: "-24%" },
     closed: { display: "none", opacity: 0 }
   },
   third: {
     open: { display: "block", opacity: 1 },
-    closed: { display: "none", opacity: 0, x: "-70%" }
+    closed: { display: "none", opacity: 0, x: "-78%" }
   }
 };
 

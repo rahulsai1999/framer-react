@@ -9,16 +9,16 @@ import { Row, Col, Container } from "react-bootstrap";
 
 const animParam = {
   first: {
-    open: { display: "block", opacity: 1, x: "27%" },
+    open: { display: "block", opacity: 1, x: "30%" },
     closed: { display: "none", opacity: 0 }
   },
   second: {
-    open: { display: "block", opacity: 1 },
+    open: { display: "block", opacity: 1, x: "-20%" },
     closed: { display: "none", opacity: 0 }
   },
   third: {
     open: { display: "block", opacity: 1 },
-    closed: { display: "none", opacity: 0, x: "-25%" }
+    closed: { display: "none", opacity: 0, x: "-70%" }
   }
 };
 
@@ -45,6 +45,7 @@ const RightSec = props => {
           <Row>
             <Col>
               <CButton
+                style={{ marginLeft: -1200 }}
                 onClick={() => {
                   stateHook(!isOpen);
                 }}
@@ -61,6 +62,11 @@ const RightSec = props => {
                 transition={{ velocity: 0.5 }}
               >
                 <img src="img/card1.png" height={410} alt="card1" />
+                <div className="right-card-text">
+                  {" "}
+                  Find the floorplan based on your builder and voila your house
+                  structure will be loaded.
+                </div>
               </motion.div>
             </Col>
             <Col>
@@ -69,7 +75,13 @@ const RightSec = props => {
                 variants={animParam.second}
                 transition={{ velocity: 0.5 }}
               >
-                <img src="img/card2.png" height={410} alt="card1" />
+                <img src="img/card2.png" height={410} alt="card2" />
+                <div className="right-card-text">
+                  {" "}
+                  Choose from Vast variety of Design from Top Interior Designer
+                  in the World and visualize what your house look like
+                  instantly.
+                </div>
               </motion.div>
             </Col>
             <Col>
@@ -78,7 +90,12 @@ const RightSec = props => {
                 variants={animParam.third}
                 transition={{ velocity: 0.5 }}
               >
-                <img src="img/card3.png" height={410} alt="card1" />
+                <img src="img/card3.png" height={410} alt="card3" />
+                <div className="right-card-text">
+                  {" "}
+                  Order the Designed home or a part of Home and Next Day your
+                  House will never be the same you used to live with.
+                </div>
               </motion.div>
             </Col>
           </Row>

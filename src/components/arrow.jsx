@@ -9,7 +9,7 @@ const Arrow = props => {
       variants={variants}
       transition={{ velocity: 0.5 }}
     >
-      <img src="img/arrsmall.svg" />
+      <img style={{ marginLeft: -5 }} src="img/arrbig.svg" />
     </motion.div>
   );
 };
@@ -34,7 +34,10 @@ const BigArrow = props => {
       variants={variants}
       transition={{ velocity: 0.5 }}
     >
-      <img src="img/arrbig.svg" />
+      <img
+        style={isOpen ? { display: "block" } : { display: "none" }}
+        src="img/arrbig.svg"
+      />
     </motion.div>
   );
 };

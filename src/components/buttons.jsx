@@ -4,18 +4,18 @@ import { IoMdClose } from "react-icons/io";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 const RButton = props => {
-  const { onClick, children } = props;
+  const { onClick, children, style } = props;
   return (
-    <Button className="red-button" onClick={onClick}>
+    <Button style={style} className="red-button" onClick={onClick}>
       <div className="red-button-text">{children}</div>
     </Button>
   );
 };
 
 const closeButton = props => {
-  const { onClick, children } = props;
+  const { onClick, children, style } = props;
   return (
-    <Button className="blue-button" onClick={onClick}>
+    <Button style={style} className="blue-button" onClick={onClick}>
       <div className="blue-button-text">
         <IoMdClose size={21} style={{ marginBottom: 1 }} />
         &nbsp;

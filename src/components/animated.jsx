@@ -87,6 +87,7 @@ const Animated = () => {
           stateHook={setisOpen}
         />
         <Button
+          style={isOpen ? { display: "none" } : null}
           onClick={() => {
             setisOpen(!isOpen);
           }}
